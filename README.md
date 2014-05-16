@@ -1,0 +1,6 @@
+LINQ Performance Example
+==============
+
+==========
+
+TBD.
