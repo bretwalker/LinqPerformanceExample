@@ -38,6 +38,8 @@ namespace LinqPerformanceExample
                 externalObjects = externalObjects.OrderBy(p => random.Next()).ToList();
 
                 // Linq
+                // Note: This isn't a LINQ perf issue, it's a consequence of a dev
+                // choosing to put a O(n) operation in an O(n) operarion
                 stopwatch.Reset();
                 stopwatch.Start();
                 for (var l = 0; l < Loops; l++)
