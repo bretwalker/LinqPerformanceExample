@@ -37,7 +37,7 @@ namespace LinqPerformanceExample
                     // And it's common to see multiple Linq
                     // statements looking through a List in a single method
                     var person1 = people.Single(p => p.Name == "1");
-                    var person2 = people.Single(p => p.Name == "1");
+                    var person2 = people.Single(p => p.Name == "2");
                 }
                 stopwatch.Stop();
                 linqRuntimes.Add(stopwatch.Elapsed.TotalMilliseconds);
