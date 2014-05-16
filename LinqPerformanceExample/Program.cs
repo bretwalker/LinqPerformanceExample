@@ -57,9 +57,9 @@ namespace LinqPerformanceExample
             }
 
             Console.Write("Linq average:\t");
-            Console.WriteLine(linqRuntimes.Average());
+            Console.WriteLine(linqRuntimes.Average()); // 800.916
             Console.Write("Dict average:\t");
-            Console.WriteLine(dictRuntimes.Average());
+            Console.WriteLine(dictRuntimes.Average()); // 0.8859 
             Console.WriteLine();
             Console.ReadKey();
         }
